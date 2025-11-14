@@ -1,5 +1,5 @@
 # CAMPRIX
- ## This is a project from the course CEF345 Software # Development Tools
+ ## This is a project from the course CEF345 Software  Development Tools
 
  # CAMPRIX is our own way to help reduce Overpricing of certain goods in our country
 
@@ -7,7 +7,7 @@
  ## Collaborators
  - Ngong Song Dilan
  - Ngoh Francis Efem
- - Ngiendoh Joyce Atabonglefac
+ - Njddiiendoh Joyce Atabonglefac
  - Um Bernard Pythagore
  - Tebid Foncham Joel
 
