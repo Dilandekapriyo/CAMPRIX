@@ -9,7 +9,7 @@
  - Ngoh Francis Efem
  - Ngiendoh Joyce Atabonglefac
  - Um Bernard Pythagore
- - Tebit Foncham Joel
+ - Tebid Foncham Joel
 
  ## How to Run
 
