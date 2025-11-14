@@ -7,7 +7,7 @@
  ## Collaborators
  - Ngong Song Dilan
  - Ngoh Francis Efem
- - Njddiiendoh Joyce Atabonglefac
+ - Njiendoh Joyce Atabonglefac
  - Um Bernard Pythagore
  - Tebid Foncham Joel
 
