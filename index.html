@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CAMPRIX – National Price Tracker</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Navigation -->
+<div class="navbar">
+    CAMPRIX
+</div>
+
+<div class="container">
+    <div class="subtitle">National Price Tracker</div>
+    <div>Last updated: <b>2024-01-15</b></div>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" placeholder="Search a product…" id="search">
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Food</button>
+        <button class="filter-btn">Fuel</button>
+        <button class="filter-btn">Construction</button>
+    </div>
+
+    <!-- Report button -->
+    <button class="warning-btn">⚠ Report Overpricing</button>
+
+    <h3 style="margin-top:20px;">Official Prices (10 products)</h3>
+
+    <!-- Product List -->
+    <div id="product-list"></div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+    <button class="active">Home</button>
+    <button>Report</button>
+    <button>Profile</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
