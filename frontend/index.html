@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMPRIX - Price Tracker</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Fallback if React fails to load
+      document.addEventListener('DOMContentLoaded', function() {
+        const root = document.getElementById('root');
+        if (!root.innerHTML || root.innerHTML.trim() === '') {
+          setTimeout(function() {
+            if (!root.innerHTML || root.innerHTML.trim() === '') {
+              console.error('React app failed to load!');
+              root.innerHTML = '<div style="padding: 20px; color: red;"><h2>Error: React app failed to load</h2><p>Check browser console for errors</p></div>';
+            }
+          }, 2000);
+        }
+      });
+    </script>
+  </body>
+</html>

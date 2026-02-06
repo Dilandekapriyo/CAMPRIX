@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_DATABASE: camprix
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    container_name: camprix-backend
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql
+      DB_USER: root
+      DB_PASS:
+      DB_NAME: camprix
+
+  frontend:
+    build: ./frontend
+    ports:
+      -"5173:5173"
+    depends_on:
+      - backend
+
