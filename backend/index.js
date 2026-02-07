@@ -100,7 +100,7 @@ app.post('/api/logout', (req, res) => {
 app.get('/api/products', async (req, res) => {
   try {
     console.log('Getting products...');
-    const [rows] = await db.execute('SELECT id, name, price, unit, cat as category, created_at FROM home_product ORDER BY id DESC');
+    const [rows] = await db.execute('SELECT id, name, price, unit, cat as category, created_at FROM home_product ORDER BY id ASC');
     console.log('Products retrieved:', rows.length, rows);
     return res.json({ products: rows });
   } catch (err) {

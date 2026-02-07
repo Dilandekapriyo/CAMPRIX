@@ -2,7 +2,7 @@ require('dotenv').config();
 const mysql = require('mysql2');
 
 // Read DB connection info from environment with sensible defaults
-const DB_HOST = process.env.DB_HOST || 'mysql'; // 'localhost' for local dev, 'mysql' for Docker
+const DB_HOST = process.env.DB_HOST || 'mysql'; 
 const DB_USER = process.env.DB_USER || 'root';
 const DB_PASS = process.env.DB_PASS || '';
 const DB_NAME = process.env.DB_NAME || 'camprix';
