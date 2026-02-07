@@ -5,17 +5,21 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: camprix
-    ports:
-      - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   backend:
     build: ./backend
     container_name: camprix-backend
     restart: always
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     ports:
       - "3000:3000"
     environment:
