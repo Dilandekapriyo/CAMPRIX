@@ -5,6 +5,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: camprix
+    ports:
+      - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
 
@@ -24,6 +26,7 @@ services:
 
   frontend:
     build: ./frontend
+    container_name: camprix-frontend
     ports:
       - "5173:5173"
     depends_on:
